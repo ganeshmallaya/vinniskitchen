@@ -1,0 +1,11 @@
+
+title: "Vinni’s Kitchen"
+description: "Homestyle Indian food and catering. Lady‑owned, community‑loved."
+timezone: America/Los_Angeles
+theme: jekyll-theme-cayman
+markdown: kramdown
+
+author: "Vinni’s Kitchen"
+email: "you@example.com"
+baseurl: "" 
+url: ""
