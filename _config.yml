@@ -2,8 +2,7 @@
 title: "viniskitchen"
 description: "Homestyle Indian food and catering. Lady‑owned, community‑loved."
 timezone: America/Los_Angeles
-theme: minimal-mistakes-jekyll
-plugins: [jekyll-include-cache]
+theme: jekyll-theme-cayman
 markdown: kramdown
 
 author: "Vineetha Pai"
