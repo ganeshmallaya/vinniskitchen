@@ -3,7 +3,7 @@ layout: default
 title: Menu
 permalink: /menu/
 ---
-
+<link rel="stylesheet" href="/assets/css/custom.css">
 <p align="center">
   <a href="{{ '/' | relative_url }}">Home</a> •
   <a href="{{ '/recipes/' | relative_url }}">Recipes</a> •

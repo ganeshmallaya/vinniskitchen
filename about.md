@@ -17,7 +17,7 @@ permalink: /about/
 
 # Our Story
 
-**Vinni’s Kitchen** is a lady‑owned, family‑run kitchen serving authentic South Indian flavors.
+**vinniskitchen** is a lady‑owned, family‑run kitchen serving authentic South Indian flavors.
 We believe in fresh ingredients, honest cooking, and community.
 
 - Based in Greater Seattle
