@@ -1,7 +1,3 @@
----
-layout: default
-title: Home
----
 <link rel="stylesheet" href="/assets/css/custom.css">
 
 <div class="hero">
@@ -12,7 +8,7 @@ title: Home
   <div class="cta">
     <a href="/menu/">See Menu</a>
     <a href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK" target="_blank" rel="noopener">Read Google Reviews</a>
-    <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank" rel="noopener">WhatsApp Us</a>
+    <a href="https://wa.me/2067917036" target="_blank" rel="noopener">WhatsApp Us</a>
   </div>
 </div>
 
