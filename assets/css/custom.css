@@ -1,12 +1,24 @@
-:root { --brand:#B22D2D; --ink:#222; --muted:#666; --bg:#fff7f5; }
-.hero { padding: 3rem 1rem; text-align:center; background: var(--bg); border-radius: 14px; }
-.hero h1 { margin:0 0 .5rem; font-size: 2rem; color: var(--ink); }
-.badges { display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap; margin: .75rem 0 1rem; }
-.badges span { background:#fff; border:1px solid #eee; padding:.35rem .6rem; border-radius:999px; font-size:.9rem; color:var(--muted); }
-.cta { display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap; margin-top:.5rem; }
-.cta a { border:1px solid var(--brand); padding:.6rem .9rem; border-radius:10px; text-decoration:none; }
-.grid { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); }
-.card { border:1px solid #eee; border-radius:14px; padding:1rem; background:#fff; }
-.card h3 { margin:.25rem 0 .5rem; }
-.section { margin:2rem 0; }
-.kicker { text-transform:uppercase; letter-spacing:.08em; color:var(--muted); font-size:.8rem; }
+/* Kill Cayman’s green hero bar */
+.page-header { background: #fff !important; background-image: none !important; padding: 0.75rem 0 !important; }
+.project-name, .project-tagline { color:#222 !important; }
+.main-content { padding-top: 0 !important; }
+
+/* Simple site style */
+:root{ --brand:#B22D2D; --ink:#222; --muted:#666; }
+a { color: var(--brand); }
+
+/* Header logo */
+.header-logo { max-height: 60px; display:block; margin: 0.5rem auto; }
+
+/* Sections & cards */
+.section{ margin: 2rem 0; }
+.grid{ display:grid; gap:1rem; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); }
+.card{ border:1px solid #eee; border-radius:14px; padding:1rem; background:#fff; }
+
+/* Simple sliders */
+.slider, .review-slider { position: relative; overflow: hidden; border-radius:14px; }
+.slide, .review { display:none; }
+.slide.active, .review.active { display:block; }
+.slider img { width:100%; height:auto; display:block; }
+.review p { margin: .5rem 0; }
+.review .who { color: var(--muted); font-size: .9rem; }

@@ -1,57 +1,69 @@
+---
+layout: default
+title: Home
+---
+
+{% include nav.html %}
 <link rel="stylesheet" href="/assets/css/custom.css">
+<img class="header-logo" src="/assets/images/vinniskitchen-logo.png" alt="Vinni's Kitchen logo">
 
-<div class="hero">
-  <h1>The luxurious taste of home-style food—delivered.</h1>
-  <div class="badges">
-    <span>Lady-owned</span><span>Authentic South Indian</span><span>Weekly Lunch Boxes</span><span>Catering</span>
-  </div>
-  <div class="cta">
-    <a href="/menu/">See Menu</a>
-    <a href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK" target="_blank" rel="noopener">Read Google Reviews</a>
-    <a href="https://wa.me/2067917036" target="_blank" rel="noopener">WhatsApp Us</a>
+# Vinni’s Kitchen
+Homestyle Indian food and catering. Lady-owned, community-loved.
+
+<!-- Image Slider -->
+<div class="section">
+  <div class="slider" id="foodSlider">
+    <!-- Replace these with your own images in /assets/images/home/ -->
+    <div class="slide active"><img src="/assets/images/home/slide1.jpg" alt="Vinni's Kitchen dish 1"></div>
+    <div class="slide"><img src="/assets/images/home/slide2.jpg" alt="Vinni's Kitchen dish 2"></div>
+    <div class="slide"><img src="/assets/images/home/slide3.jpg" alt="Vinni's Kitchen dish 3"></div>
   </div>
 </div>
 
 <div class="section">
-  <div class="kicker">This Week</div>
-  <h2>This Week’s Menu</h2>
   <div class="grid">
-    <div class="card"><h3>Tuesday Delivery</h3><p>Free delivery lunch boxes for offices & orders ≥ $30.</p><a href="/menu/">Order &rarr;</a></div>
-    <div class="card"><h3>Friday Delivery</h3><p>Chef’s picks + kids-friendly add-ons.</p><a href="/menu/">Order &rarr;</a></div>
+    <div class="card">
+      <h3>PreOrders</h3>
+      <p>Order this week’s meals for delivery.</p>
+      <a href="/preorders/">Open PreOrders →</a>
+    </div>
+    <div class="card">
+      <h3>Catering</h3>
+      <p>Parties, housewarmings, and community events—made easy.</p>
+      <a href="/catering-request/">Request catering →</a>
+    </div>
+    <div class="card">
+      <h3>Our Recipes</h3>
+      <p>Homestyle dishes from our kitchen to yours.</p>
+      <a href="/recipes/">Browse recipes →</a>
+    </div>
   </div>
 </div>
 
+<!-- Reviews Slider -->
 <div class="section">
-  <div class="kicker">Services</div>
-  <h2>What We Do</h2>
-  <div class="grid">
-    <div class="card"><h3>Food Delivery</h3><p>Fresh homestyle meals to your doorstep.</p><a href="/menu/">Learn more &rarr;</a></div>
-    <div class="card"><h3>Catering</h3><p>Parties, housewarmings, community events.</p><a href="/contact/">Get in touch &rarr;</a></div>
-    <div class="card"><h3>Lunch Boxes</h3><p>Pre-order weekly lunch boxes for teams.</p><a href="/menu/">See options &rarr;</a></div>
+  <h2>What customers say</h2>
+  <div class="review-slider" id="reviewSlider">
+    {% for r in site.data.reviews %}
+    <div class="review{% if forloop.first %} active{% endif %}">
+      <p>“{{ r.text }}”</p>
+      <div class="who">— {{ r.author }}{% if r.stars %} • ⭐ {{ r.stars }}/5{% endif %}</div>
+      {% if r.link %}<p><a href="{{ r.link }}" target="_blank" rel="noopener">View on Google</a></p>{% endif %}
+    </div>
+    {% endfor %}
   </div>
 </div>
 
-<div class="section">
-  <div class="kicker">About</div>
-  <h2>Lady-Owned. Community-Loved.</h2>
-  <p>Vinni’s Kitchen is a family-run kitchen serving authentic South Indian flavors in Greater Seattle. We believe in fresh ingredients, honest cooking, and community.</p>
-  <p><a href="/about/">Our story &rarr;</a></p>
-</div>
+<script>
+(function(){
+  // Image slider (change every 3s)
+  const slides = document.querySelectorAll('#foodSlider .slide');
+  let i = 0;
+  setInterval(()=>{ slides[i].classList.remove('active'); i = (i+1)%slides.length; slides[i].classList.add('active'); }, 3000);
 
-<div class="section">
-  <div class="kicker">Reviews</div>
-  <h2>What Customers Say</h2>
-  <p>Read verified reviews on Google.</p>
-  <p><a href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK" target="_blank" rel="noopener">Open Google Reviews &rarr;</a></p>
-</div>
-
-<div class="section">
-  <div class="kicker">Contact</div>
-  <h2>Get in Touch</h2>
-  <div class="grid">
-    <div class="card"><h3>Call / WhatsApp</h3><p>+1 (XXX) XXX-XXXX</p></div>
-    <div class="card"><h3>Email</h3><p>you@example.com</p></div>
-    <div class="card"><h3>Instagram</h3><p>@vinniskitchen</p></div>
-  </div>
-  <p style="margin-top:.75rem;">Open daily for catering enquiries — call or WhatsApp.</p>
-</div>
+  // Reviews slider (change every 5s)
+  const revs = document.querySelectorAll('#reviewSlider .review');
+  let j = 0;
+  setInterval(()=>{ revs[j].classList.remove('active'); j = (j+1)%revs.length; revs[j].classList.add('active'); }, 5000);
+})();
+</script>

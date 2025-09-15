@@ -1,20 +1,13 @@
+{% include nav.html %}
 ---
 layout: default
 title: Contact Us
 permalink: /contact/
 ---
-<link rel="stylesheet" href="/assets/css/custom.css">
-<p align="center">
-  <a href="{{ '/' | relative_url }}">Home</a> •
-  <a href="{{ '/preorder/' | relative_url }}">Weekly PreOrder</a> •
-  <a href="{{ '/recipes/' | relative_url }}">Recipes</a> •
-  <a href="{{ '/menu/' | relative_url }}">Menu</a> •
-  <a href="{{ '/about/' | relative_url }}">About</a> •
-  <a href="{{ '/contact/' | relative_url }}">Contact</a> •
-  <a href="https://g.page/r/" target="_blank" rel="noopener">Reviews</a>
-</p>
 
-<hr/>
+{% include nav.html %}
+<link rel="stylesheet" href="/assets/css/custom.css">
+<img class="header-logo" src="/assets/images/vinniskitchen-logo.png" alt="Vinni's Kitchen logo">
 
 # Contact Us
 
@@ -22,5 +15,4 @@ permalink: /contact/
 - 📧 Email: **reachus@@vinniskitche.com**
 - 📸 Instagram: **@vinniskitchen**
 
-Prefer a form? Use this Google Form link (replace with your own):  
-[Order / Inquiry Form](https://tr.ee/EITfbfXYM6)
+(You can also embed a Google Map iframe here if you like.)

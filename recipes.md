@@ -1,19 +1,14 @@
-<link rel="stylesheet" href="/assets/css/custom.css">
-<p align="center">
-  <a href="{{ '/' | relative_url }}">Home</a> •
-  <a href="{{ '/recipes/' | relative_url }}">Recipes</a> •
-  <a href="{{ '/menu/' | relative_url }}">Menu</a> •
-  <a href="{{ '/about/' | relative_url }}">About</a> •
-  <a href="{{ '/contact/' | relative_url }}">Contact</a> •
-  <a href="https://g.page/r/" target="_blank" rel="noopener">Reviews</a>
-</p>
+---
+layout: default
+title: Recipes
+permalink: /recipes/
+---
 
-<hr/>
+{% include nav.html %}
+<link rel="stylesheet" href="/assets/css/custom.css">
+<img class="header-logo" src="/assets/images/vinniskitchen-logo.png" alt="Vinni's Kitchen logo">
 
 # Recipes
-
-Browse our home‑style recipes.
-
 {% assign recipes = site.posts | where_exp: "post", "post.categories contains 'recipe'" %}
 <ul>
 {% for post in recipes %}

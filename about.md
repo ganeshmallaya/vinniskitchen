@@ -18,3 +18,5 @@ We believe in fresh ingredients, honest cooking, and community.
 - Based in Greater Seattle
 - Specializing in on‑demand catering & weekly meal plans
 - Proudly supporting local community events
+
+
