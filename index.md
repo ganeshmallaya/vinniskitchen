@@ -1,13 +1,8 @@
----
-layout: default
-title: Home
----
-
 {% include nav.html %}
 <link rel="stylesheet" href="/assets/css/custom.css">
 <img class="header-logo" src="/assets/images/vinniskitchen-logo.png" alt="Vinni's Kitchen logo">
 
-# Vinni’s Kitchen
+# vinniskitchen
 Homestyle Indian food and catering. Lady-owned, community-loved.
 
 <!-- Image Slider -->
