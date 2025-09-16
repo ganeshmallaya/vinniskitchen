@@ -1,11 +1,4 @@
 {% include nav.html %}
----
-layout: default
-title: Contact Us
-permalink: /contact/
----
-
-{% include nav.html %}
 <link rel="stylesheet" href="/assets/css/custom.css">
 <img class="header-logo" src="/assets/images/vinniskitchen-logo.png" alt="Vinni's Kitchen logo">
 

@@ -1,9 +1,3 @@
----
-layout: default
-title: About Vineetha
-permalink: /about-vineetha/
----
-
 {% include nav.html %}
 <link rel="stylesheet" href="/assets/css/custom.css">
 <img class="header-logo" src="/assets/images/vinniskitchen-logo.png" alt="Vinni's Kitchen logo">
